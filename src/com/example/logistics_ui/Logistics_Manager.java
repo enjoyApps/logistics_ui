@@ -35,6 +35,7 @@ public class Logistics_Manager extends TabActivity {
 		  .setContent(intentSendParcel);
  
 		// Bill Search tab
+		//Intent intentBillSearch = new Intent().setClass(this, Account_login.class);
 		Intent intentBillSearch = new Intent().setClass(this, Bill_search.class);
 		TabSpec tabSpecBillSearch = tabHost
 		  .newTabSpec("¿ìµÝµ¥²éÑ¯")
