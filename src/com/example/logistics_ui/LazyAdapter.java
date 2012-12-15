@@ -50,7 +50,7 @@ public class LazyAdapter extends BaseAdapter {
         song = data.get(position);
  
         // Setting all values in listview
-        title.setText(song.get(CustomizedListView.KEY_TITLE));
+        title.setText(song.get(Send_parcel.KEY_TITLE));
         artist.setText(song.get(CustomizedListView.KEY_ARTIST));
         duration.setText(song.get(CustomizedListView.KEY_DURATION));
         return vi;
