@@ -45,18 +45,21 @@ public final class R {
         public static final int dialog_box_2=0x7f02000f;
         public static final int ic_launcher=0x7f020010;
         public static final int img_login_360buy=0x7f020011;
-        public static final int img_login_paipai=0x7f020012;
-        public static final int img_login_taobao=0x7f020013;
-        public static final int label_color=0x7f020019;
-        public static final int location_place=0x7f020014;
-        public static final int login_360buy=0x7f020015;
-        public static final int login_paipai=0x7f020016;
-        public static final int login_taobao=0x7f020017;
-        public static final int scan=0x7f020018;
-        public static final int status_color=0x7f02001a;
-        public static final int tweet_color=0x7f02001c;
-        public static final int tweet_meta_color=0x7f02001d;
-        public static final int tweet_user_color=0x7f02001b;
+        public static final int img_login_360buy_focus=0x7f020012;
+        public static final int img_login_paipai=0x7f020013;
+        public static final int img_login_paipai_focus=0x7f020014;
+        public static final int img_login_taobao=0x7f020015;
+        public static final int img_login_taobao_focus=0x7f020016;
+        public static final int label_color=0x7f02001c;
+        public static final int location_place=0x7f020017;
+        public static final int login_360buy=0x7f020018;
+        public static final int login_paipai=0x7f020019;
+        public static final int login_taobao=0x7f02001a;
+        public static final int scan=0x7f02001b;
+        public static final int status_color=0x7f02001d;
+        public static final int tweet_color=0x7f02001f;
+        public static final int tweet_meta_color=0x7f020020;
+        public static final int tweet_user_color=0x7f02001e;
     }
     public static final class id {
         public static final int bill_search=0x7f080003;
