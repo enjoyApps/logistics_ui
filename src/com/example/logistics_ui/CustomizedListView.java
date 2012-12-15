@@ -1,11 +1,17 @@
 package com.example.logistics_ui;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
+import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.renderscript.Element;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
@@ -26,7 +32,7 @@ public class CustomizedListView extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_parcel);
+        setContentView(R.layout.activity_customizedlistview);
  
         ArrayList<HashMap<String, String>> songsList = new ArrayList<HashMap<String, String>>();
  
