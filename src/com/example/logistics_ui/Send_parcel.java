@@ -14,17 +14,17 @@ import android.widget.Toast;
 public class Send_parcel extends ListActivity {
 
 	String[] logistics_list = {
-            "ÉêÍ¨¿ìµİ",
-            "ÖĞÍ¨¿ìµİ",
-            "Ô²Í¨¿ìµİ",
-            "Ë³·á¿ìµİ",
-            "ÌìÌì¿ìµİ",
-            "ÖĞÌúÎïÁ÷",
+            "ç”³é€šå¿«é€’",
+            "å¾·é‚¦ç‰©æµ",
+            "æ–°é‚¦ç‰©æµ",
+            "å¤©å¤©å¿«é€’",
+            "ä½³å‰å¿«è¿",
+            "é¡ºä¸°é€Ÿè¿",
             "EMS",
-            "¼Ñ¼ª¿ìÔË",
-            "ÔÏ´ï¿ìÔË",
-            "µÂ°îÎïÁ÷",
-            "ĞÂ°îÎïÁ÷"
+            "éŸµè¾¾å¿«è¿",
+            "ä¸­é€šé€Ÿé€’",
+            "ä¸­é“ç‰©æµ",
+            "åœ†é€šé€Ÿé€’"
     };
  
     @Override  
@@ -40,12 +40,12 @@ public class Send_parcel extends ListActivity {
     public void onListItemClick(ListView parent, View v,int position, long id) 
     {   
         	Toast.makeText(this, 
-            "µç»°ÁªÏµ " + logistics_list[position] + " ÉÏÃÅÈ¡¼ş¡£", 
+            "ç”µè¯è”ç³»" + logistics_list[position] + " ä¸Šé—¨å–ä»¶", 
             Toast.LENGTH_SHORT).show();
         	
         	String num = "13437292435";
         	
-        	// µ÷ÓÃ²¦ºÅ¼üÅÌ
+        	// æ‰“å¼€æ‹¨å·é”®ç›˜
         	Intent intent=new Intent("android.intent.action.CALL",Uri.parse("tel:" + num));
 			startActivity(intent);
     } 

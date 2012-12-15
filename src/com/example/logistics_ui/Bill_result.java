@@ -12,9 +12,9 @@ import android.widget.Toast;
 public class Bill_result extends ListActivity {
 
 	String[] logistics_list = {
-            "µ½´ï£º±±¾©",
-            "µ½´ï£ºÌì½ò",
-            "µ½´ï£ºÉÏº£",
+            "å·²åˆ°è¾¾åŒ—äº¬",
+            "å·²åˆ°è¾¾ä¸Šæµ·",
+            "å·²åˆ°è¾¾å—äº¬",
     };
  
     @Override  

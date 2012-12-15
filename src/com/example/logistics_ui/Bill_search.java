@@ -25,12 +25,21 @@ public class Bill_search extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bill_search);
 		
+//		Button choose_com_btn = (Button) findViewById(R.id.choose_com_button);
+//		choose_com_btn.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//            	
+//            	Intent i = new Intent(Bill_search.this, Logistics_list.class);
+//				startActivity(i);
+//            }
+//        });
+		
 		Button search_btn = (Button) findViewById(R.id.search_submit);
 		search_btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	
             	// TODO: hide the keyboard
-//            	View view = getWindow().getDecorView().findViewById(android.R.id.bill_search);
+//            	View view = v.findViewById(android.R.id.bill_search);
 //            	hideSoftKeyboard(this, view);
             	
             	Intent i = new Intent(Bill_search.this, Bill_result.class);

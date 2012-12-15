@@ -64,10 +64,11 @@ public final class R {
         public static final int choose_num_button=0x7f080008;
         public static final int logistics_com_edit=0x7f080004;
         public static final int logistics_num_edit=0x7f080005;
-        public static final int menu_settings=0x7f08000b;
-        public static final int parcel_list=0x7f080009;
-        public static final int parcel_list_text=0x7f08000a;
+        public static final int menu_settings=0x7f08000c;
+        public static final int parcel_list=0x7f08000a;
+        public static final int parcel_list_text=0x7f08000b;
         public static final int search_submit=0x7f080007;
+        public static final int spinner1=0x7f080009;
         public static final int to_login_360buy=0x7f080002;
         public static final int to_login_paipai=0x7f080001;
         public static final int to_login_taobao=0x7f080000;

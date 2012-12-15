@@ -23,23 +23,23 @@ public class Logistics_Manager extends TabActivity {
 		//Intent intentParcel_list = new Intent().setClass(this, Parcel_list.class);
 		Intent intentParcel_list = new Intent().setClass(this, Account_login.class);
 		TabSpec tabSpecParcel_list = tabHost
-		  .newTabSpec("ÎÒµÄ¿ìµİ")
-		  .setIndicator("ÎÒµÄ¿ìµİ", null)
+		  .newTabSpec("æˆ‘çš„å¿«é€’")
+		  .setIndicator("æˆ‘çš„å¿«é€’", null)
 		  .setContent(intentParcel_list);
  
 		// Send Parcel tab
 		Intent intentSendParcel = new Intent().setClass(this, Send_parcel.class);
 		TabSpec tabSpecSendParcel = tabHost
-		  .newTabSpec("¼Ä¿ìµİ")
-		  .setIndicator("¼Ä¿ìµİ", null)
+		  .newTabSpec("å¯„å¿«é€’")
+		  .setIndicator("å¯„å¿«é€’", null)
 		  .setContent(intentSendParcel);
  
 		// Bill Search tab
 		//Intent intentBillSearch = new Intent().setClass(this, Account_login.class);
 		Intent intentBillSearch = new Intent().setClass(this, Bill_search.class);
 		TabSpec tabSpecBillSearch = tabHost
-		  .newTabSpec("¿ìµİµ¥²éÑ¯")
-		  .setIndicator("¿ìµİµ¥²éÑ¯", null)
+		  .newTabSpec("å¿«é€’å•æŸ¥è¯¢")
+		  .setIndicator("å¿«é€’å•æŸ¥è¯¢", null)
 		  .setContent(intentBillSearch);
  
 		// add all tabs 

@@ -8,25 +8,31 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Logistics_list extends ListActivity {
 	
 	String[] logistics_list = {
-            "ÉêÍ¨¿ìµİ",
-            "ÖĞÍ¨¿ìµİ",
-            "Ô²Í¨¿ìµİ",
-            "Ë³·á¿ìµİ",
-            "ÌìÌì¿ìµİ",
-            "ÖĞÌúÎïÁ÷",
+            "ç”³é€šå¿«é€’",
+            "å¾·é‚¦ç‰©æµ",
+            "æ–°é‚¦ç‰©æµ",
+            "å¤©å¤©å¿«é€’",
+            "ä½³å‰å¿«è¿",
+            "é¡ºä¸°é€Ÿè¿",
             "EMS",
-            "¼Ñ¼ª¿ìÔË",
-            "ÔÏ´ï¿ìÔË",
-            "µÂ°îÎïÁ÷",
-            "ĞÂ°îÎïÁ÷"
+            "éŸµè¾¾å¿«è¿",
+            "ä¸­é€šé€Ÿé€’",
+            "ä¸­é“ç‰©æµ",
+            "åœ†é€šé€Ÿé€’"
     };
+	
+	Spinner s1;
 	
     @Override  
     public void onCreate(Bundle savedInstanceState) 
@@ -36,6 +42,29 @@ public class Logistics_list extends ListActivity {
  
         setListAdapter(new ArrayAdapter<String>(this,
         	android.R.layout.simple_list_item_1, logistics_list));
+        
+        s1 = (Spinner) findViewById(R.id.spinner1);
+        
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+            android.R.layout.simple_spinner_item, logistics_list);
+ 
+        s1.setAdapter(adapter);
+        OnItemSelectedListener onItemSelectedListener = new OnItemSelectedListener()
+        {
+            public void onItemSelected(AdapterView<?> arg0, 
+            View arg1, int arg2, long arg3) 
+            {
+                int index = s1.getSelectedItemPosition();
+                Toast.makeText(getBaseContext(), 
+                    "You have selected item : " + logistics_list[index], 
+                    Toast.LENGTH_SHORT).show();                
+            }
+ 
+            public void onNothingSelected(AdapterView<?> arg0) {}
+
+        };
+        s1.setOnItemSelectedListener(onItemSelectedListener);
+        
     }    
  
     public void onListItemClick(ListView parent, View v,int position, long id) 
