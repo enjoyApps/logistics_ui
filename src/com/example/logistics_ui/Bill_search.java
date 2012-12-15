@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TabHost.TabSpec;
 
 public class Bill_search extends Activity {
@@ -25,14 +26,14 @@ public class Bill_search extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bill_search);
 		
-//		Button choose_com_btn = (Button) findViewById(R.id.choose_com_button);
-//		choose_com_btn.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//            	
-//            	Intent i = new Intent(Bill_search.this, Logistics_list.class);
-//				startActivity(i);
-//            }
-//        });
+		ImageButton choose_com_btn = (ImageButton) findViewById(R.id.choose_com_button);
+		choose_com_btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	
+            	Intent i = new Intent(Bill_search.this, Logistics_list.class);
+				startActivity(i);
+            }
+        });
 		
 		Button search_btn = (Button) findViewById(R.id.search_submit);
 		search_btn.setOnClickListener(new View.OnClickListener() {
