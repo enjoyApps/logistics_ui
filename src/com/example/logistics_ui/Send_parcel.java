@@ -13,8 +13,22 @@ import android.widget.Toast;
 
 public class Send_parcel extends ListActivity {
 
+//	String[] logistics_list = {
+//            "申通快递",
+//            "德邦物流",
+//            "新邦物流",
+//            "天天快递",
+//            "佳吉快运",
+//            "顺丰速运",
+//            "EMS",
+//            "韵达快运",
+//            "中通速递",
+//            "中铁物流",
+//            "圆通速递"
+//    };
+	
 	String[] logistics_list = {
-            "申通快递",
+            "申通快递 13437292435",
             "德邦物流",
             "新邦物流",
             "天天快递",
